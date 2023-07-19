@@ -1,0 +1,19 @@
+.info-form {
+    font: inherit;
+    gap: 1rem;
+    text-align: left;
+}
+
+.info-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.info-form input {
+    display: block;
+    margin-bottom: 0.3rem;
+    width: 25rem;
+    max-width: 95%;
+    border: 1px solid #ccc;
+}
