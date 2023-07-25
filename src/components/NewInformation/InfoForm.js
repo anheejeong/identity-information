@@ -26,19 +26,21 @@ const InfoForm = (props) => {
     }
 
     return (
-        <form onSubmit={submitHandler}>
-            <div className="info-form">
-                <div className="info-form__name">
-                    <label>Username</label>
-                    <input type="text" value={enteredName} onChange={nameChangeHandler} />
+        <div>
+            <form onSubmit={submitHandler}>
+                <div className="info-form">
+                    <div className="info-form__name">
+                        <label>Username</label>
+                        <input type="text" value={enteredName} onChange={nameChangeHandler} />
+                    </div>
+                    <div className="info-form__age">
+                        <label>Age(Years)</label>
+                        <input type="number" min="0" value={enteredAge} onChange={ageChangeHandler} />
+                    </div>
                 </div>
-                <div className="info-form__age">
-                    <label>Age(Years)</label>
-                    <input type="number" min="0" value={enteredAge} onChange={ageChangeHandler} />
-                </div>
-            </div>
-            <button type="submit">Add User</button>
-        </form>
+                <button type="submit">Add User</button>
+            </form>
+        </div>
     );
 }
 
